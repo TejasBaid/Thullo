@@ -1,11 +1,20 @@
 import React from 'react'
-import {FaEnvelope} from "react-icons/fa/index";
+import {FaEnvelope,FaUserAlt,FaLock} from "react-icons/fa/index";
 
-export const FormInput = (params) => {
+export const FormInput = ({placeholder,type}) => {
     return (
         <div className="form-input-box">
-            <FaEnvelope className="input-icon" />
-            <input className="form-input" placeholder="Email"/>
+            { //Check if message failed
+                (type === 'name')
+                    ? <FaUserAlt className="input-icon" />
+                    : (type === 'email')
+                        ? <FaEnvelope className="input-icon" />
+                    :(type === 'password')
+                        ? <FaLock className="input-icon" />
+                    :null
+            }
+
+            <input className="form-input" placeholder={placeholder}/>
         </div>
     )
 }
