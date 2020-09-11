@@ -1,0 +1,25 @@
+.searchbar{
+  display: flex;
+  align-items: center;
+  box-shadow: -2px 3px 11px #e6e6e6;
+  height: 5.3vh;
+  padding: 0 0.8vh;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.search-button{
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #2F80ED;
+  height: 4.3vh;
+  padding: 0.5vh 1.6vw;
+  border-radius: 5px;
+}
+.search-input{
+  width: 15vw;
+  margin-left: 2vh;
+  font-size: 0.8rem;
+}

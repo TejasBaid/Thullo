@@ -5,6 +5,7 @@
 }
 
 body{
+
   font-family: 'Poppins', sans-serif;
 }
 input{
@@ -18,4 +19,12 @@ input{
   width: 100%;
   display: flex;
   justify-content: center;
+}
+.homepage{
+  padding: 3vh 3vw;
+}
+.pointer{
+  &:hover{
+    cursor: pointer;
+  }
 }

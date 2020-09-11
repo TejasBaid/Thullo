@@ -3,6 +3,7 @@ import {Switch, Route, BrowserRouter} from 'react-router-dom';
 import './App.scss';
 import {Signup} from "./Components/Auth/Signup";
 import {Login} from "./Components/Auth/Login";
+import {Header} from "./Components/Header/Header";
 
 const App = () => {
   return (
@@ -20,7 +21,10 @@ const App = () => {
 
 const Home = () => {
     return(
-        <div>Homepage</div>
+
+        <div className={'homepage'}>
+            <Header />
+        </div>
     )
 }
 
