@@ -1,6 +1,6 @@
 
 .header{
-  height: 6vh;
+  height: 5vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,4 +37,41 @@
 }
 .header-logo{
   width: 7.5vw;
+}
+.mobile-header{
+  display: none;
+}
+// Mobile media query
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .header{
+    display: none;
+  }
+  .mobile-header{
+    padding: 0 2.5vw;
+    display: unset;
+  }
+
+  .header-logo{
+    width: 25vw;
+  }
+  .mobile-header-top{
+    padding:0 2.5vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-board-name{
+    font-size: 0.7rem;
+  }
+  .header-boards-section{
+    margin-top: 2vh;
+    width: 100%;
+
+    justify-content: center;
+  }
+  .sbar-container{
+    padding: 0 2.5vw;
+  }
+
+
 }

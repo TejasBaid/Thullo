@@ -7,28 +7,48 @@ import {ProfileDropdown} from "../ProfileDropdown/ProfileDropdown";
 
 export const Header = () => {
     return(
-        <div className="header">
-            {/* Logo */}
-            <img className={"header-logo"} src={logo} alt={"logo"}/>
+        <div className="header-container">
+            {/* Desktop Header */}
+            <div className="header">
+                {/* Logo */}
+                <img className={"header-logo"} src={logo} alt={"logo"}/>
 
-            <div className="header-boards-section">
-                {/* Board Name */}
-                <p className="header-board-name">DevChallenges Board</p>
-                <div className="bar"> </div>
+                <div className="header-boards-section">
+                    {/* Board Name */}
+                    <p className="header-board-name">DevChallenges Board</p>
+                    <div className="bar"> </div>
 
-                {/* All Boards button */}
-                <div className="all-boards-button">
-                    <FaTh className='boards-icon' />
-                    <p className="all-boards">All Boards</p>
+                    {/* All Boards button */}
+                    <div className="all-boards-button">
+                        <FaTh className='boards-icon' />
+                        <p className="all-boards">All Boards</p>
 
+                    </div>
                 </div>
+
+                {/* Searchbar */}
+                <Searchbar />
+
+                {/* Profile Dropdown */}
+                <ProfileDropdown />
+
             </div>
 
-            {/* TODO: (Component) Searchbar */}
-            <Searchbar />
+            {/* Mobile Header */}
+            <div className="mobile-header">
+                <div className="mobile-header-top">
+                    {/* Logo */}
+                    <img className={"header-logo"} src={logo} alt={"logo"}/>
+                    {/* Profile Dropdown */}
+                    <ProfileDropdown />
+                </div>
+                <div className="sbar-container">
+                    <Searchbar />
+                </div>
 
-            <ProfileDropdown />
 
+
+            </div>
         </div>
     )
 }
