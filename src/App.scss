@@ -14,15 +14,14 @@ input{
     outline: none;
   }
 }
+
 .srow{
   margin-top: 2vh;
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.homepage{
-  padding: 3vh 3vw;
-}
+
 .pointer{
   &:hover{
     cursor: pointer;

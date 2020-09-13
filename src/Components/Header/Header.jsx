@@ -2,8 +2,8 @@ import React from 'react'
 import './Header.scss'
 import {FaTh} from 'react-icons/fa'
 import logo from '../../Assets/logo.svg'
-import {Searchbar} from "../Searchbar/Searchbar";
-import {ProfileDropdown} from "../ProfileDropdown/ProfileDropdown";
+import {Searchbar} from "./Searchbar/Searchbar";
+import {ProfileDropdown} from "./ProfileDropdown/ProfileDropdown";
 
 export const Header = () => {
     return(

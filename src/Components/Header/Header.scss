@@ -1,9 +1,12 @@
-
 .header{
   height: 5vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.header-container{
+  margin-bottom: 0vh;
+  padding: 3vh 3vw;
 }
 
 .all-boards-button{

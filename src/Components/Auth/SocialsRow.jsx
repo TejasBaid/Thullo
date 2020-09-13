@@ -1,9 +1,9 @@
 import React from 'react'
 import './Auth.scss'
-import Google from "../../Assets/Google.svg";
-import Facebook from "../../Assets/Facebook.svg";
-import Twitter from "../../Assets/Twitter.svg";
-import Github from "../../Assets/Gihub.svg";
+import Google from "../../Assets/socials/Google.svg";
+import Facebook from "../../Assets/socials/Facebook.svg";
+import Twitter from "../../Assets/socials/Twitter.svg";
+import Github from "../../Assets/socials/Gihub.svg";
 
 export const SocialsRow = () => {
     return (

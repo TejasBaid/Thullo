@@ -1,0 +1,25 @@
+.boards-page-header-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.boards-header-title{
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.add-button{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-size: 0.9rem;
+  background-color: #2F80ED;
+  padding: 0.6vh 1.2vw;
+  border-radius: 5px;
+}
+.add-icon{
+  margin-right: 0.7vw;
+}
+.boards-page-header-container{
+  margin-bottom: 6vh;
+}
