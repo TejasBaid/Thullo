@@ -4,6 +4,7 @@ import {AuthHeader} from "./AuthHeader";
 import {FormInput} from "./FormInput";
 import {SocialsRow} from "./SocialsRow";
 import {SignupContext} from "../../Context/SignupContext";
+import uuid from "react-uuid";
 
 export const Signup = () => {
     const {Fields} = useContext(SignupContext);
@@ -14,7 +15,7 @@ export const Signup = () => {
                 <AuthHeader />
                 <div className="form-inputs-container">
                     {Fields.map((field) => {
-                            return <FormInput placeholder={field.placeholder} fieldFunction={setFieldsData} name={field.name} value={field.value} type={field.type} />
+                            return <FormInput key={uuid()} placeholder={field.placeholder} fieldFunction={setFieldsData} name={field.name} value={field.value} type={field.type} />
                         })}
                     <div className="submit-button">
                         Create Account

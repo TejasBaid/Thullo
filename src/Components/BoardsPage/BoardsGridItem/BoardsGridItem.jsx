@@ -1,6 +1,5 @@
 import React from 'react'
 import './BoardsGridItem.scss'
-import sample1 from "../../../Assets/samples/sample1.jpg";
 import user1 from '../../../Assets/sample_users/user1.jpg'
 import user2 from '../../../Assets/sample_users/user2.jpg'
 import user3 from '../../../Assets/sample_users/user3.jpg'

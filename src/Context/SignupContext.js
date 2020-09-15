@@ -1,5 +1,4 @@
-import React,{createContext,useState,useReducer} from 'react';
-import {handleChange} from "../Helpers/FormHelper";
+import React,{createContext,useState} from 'react';
 export const SignupContext = createContext()
 
 export const SignupContextProvider = ({children}) => {

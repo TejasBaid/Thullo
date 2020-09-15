@@ -3,9 +3,8 @@ import {Switch, Route, BrowserRouter} from 'react-router-dom';
 import './App.scss';
 import {Signup} from "./Components/Auth/Signup";
 import {Login} from "./Components/Auth/Login";
-import {Header} from "./Components/Header/Header";
 import {BoardsPage} from "./Components/BoardsPage/BoardsPage";
-import {Contexts} from "./Components/Contexts";
+import {Contexts} from "./Contexts";
 
 const App = () => {
   return (
