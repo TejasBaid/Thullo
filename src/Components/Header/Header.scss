@@ -5,8 +5,13 @@
   align-items: center;
 }
 .header-container{
+  background-color: white;
   margin-bottom: 0vh;
   padding: 3vh 3vw;
+}
+
+.shd{
+  box-shadow: 0 0 10px #ededed;
 }
 
 .all-boards-button{

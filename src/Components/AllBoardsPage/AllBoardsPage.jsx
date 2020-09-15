@@ -1,10 +1,10 @@
 import React from 'react'
-import './BoardsPage.scss'
+import './AllBoardsPage.scss'
 import {Header} from "../Header/Header";
-import {BoardsPageHeader} from "./BoardsPageHeader/BoardsPageHeader";
-import {BoardsPageGrid} from "./BoardsPageGrid/BoardsPageGrid";
+import {BoardsPageHeader} from "./AllBoardsPageHeader/BoardsPageHeader";
+import {AllBoardsPageGrid} from "./AllBoardsPageGrid/AllBoardsPageGrid";
 
-export const BoardsPage = () => {
+export const AllBoardsPage = () => {
     return(
         <div className="boards-page-container">
             <div className="boards-page-header">
@@ -12,7 +12,7 @@ export const BoardsPage = () => {
             </div>
             <div className="boards-page">
                 <BoardsPageHeader />
-                <BoardsPageGrid />
+                <AllBoardsPageGrid />
             </div>
         </div>
     )

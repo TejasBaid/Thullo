@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useState} from 'react'
 import './Header.scss'
 import {FaTh} from 'react-icons/fa'
 import logo from '../../Assets/logo.svg'
@@ -6,8 +6,9 @@ import {Searchbar} from "./Searchbar/Searchbar";
 import {ProfileDropdown} from "./ProfileDropdown/ProfileDropdown";
 
 export const Header = () => {
+    const [shd , setShd] = useState(true)
     return(
-        <div className="header-container">
+        <div className={shd ? "header-container shd" : "header-container"}>
             {/* Desktop Header */}
             <div className="header">
                 {/* Logo */}
