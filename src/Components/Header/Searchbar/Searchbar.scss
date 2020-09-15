@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   box-shadow: 0 3px 11px #e6e6e6;
-  height: 4.5vh;
+  height: 5vh;
   padding: 0 0.5vh;
   justify-content: space-between;
   border-radius: 10px;
@@ -14,7 +14,7 @@
   align-items: center;
   color: white;
   background-color: #2F80ED;
-  height: 3.5vh;
+  height: 4vh;
   padding: 0.3vh 1vw;
   border-radius: 5px;
 }
@@ -27,12 +27,14 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 
   .searchbar{
-    margin-top: 2vh;
+    height: 7vh;
+    margin-top: 3vh;
   }
   .search-input{
     width: 80vw;
   }
   .search-button{
-    padding: 0.5vh 5vw;
+    height: 6vh;
+    padding: 0.5vh 10vw;
   }
 }

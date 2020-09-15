@@ -8,7 +8,7 @@ export const BoardsGridItem = ({boardName,backgroundImage}) => {
     return(
         <div className="boards-grid-item">
             <div className="grid-item-image-container" style={{ backgroundImage: "url(" + backgroundImage + ")",}}> </div>
-            <p className="grid-item-title">{boardName}</p>
+            <p className="grid-item-title pointer">{boardName}</p>
             <div className="users-row">
                 <div className="user-avatar-container" style={{ backgroundImage: "url(" + user1 + ")",}}> </div>
                 <div className="user-avatar-container" style={{ backgroundImage: "url(" + user2 + ")",}}> </div>

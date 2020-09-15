@@ -1,20 +1,21 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import './Auth.scss'
 import {AuthHeader} from "./AuthHeader";
 import {FormInput} from "./FormInput";
 import {SocialsRow} from "./SocialsRow";
+import {LoginContext} from "../../Context/LoginContext";
 
 export const Login = () => {
+    const {Fields} = useContext(LoginContext)
+    const {setFieldsData} = useContext(LoginContext)
     return (
         <div className="authpage">
             <div className="auth-form">
                 <AuthHeader />
                 <div className="form-inputs-container">
-                    {/* Email Field  */}
-                    <FormInput placeholder={"Email"} type={"email"} />
-                    {/* Password Field  */}
-                    <FormInput placeholder={"Password"} type={"password"} />
-
+                    {Fields.map((field) => {
+                            return <FormInput placeholder={field.placeholder} fieldFunction={setFieldsData} name={field.name} value={field.value} type={field.type} />
+                        })}
                     <div className="submit-button">
                         Login
                     </div>

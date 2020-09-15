@@ -33,3 +33,10 @@
   font-size: 0.7rem;
   color: #BDBDBD
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .boards-grid-item{
+    padding: 5vw 5vw;
+  }
+
+}
