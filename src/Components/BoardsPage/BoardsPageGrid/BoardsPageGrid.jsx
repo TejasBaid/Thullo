@@ -1,14 +1,16 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import './BoardsPageGrid.scss'
-import sample1 from '../../../Assets/samples/sample1.jpg'
-import sample2 from '../../../Assets/samples/sample2.jpg'
 import {BoardsGridItem} from "../BoardsGridItem/BoardsGridItem";
+import {BoardContext} from "../../../Context/BoardContext";
+import uuid from 'react-uuid';
 
 export const BoardsPageGrid = () => {
+    const {boards} = useContext(BoardContext)
     return(
         <div className="boards-page-grid">
-            <BoardsGridItem boardName="Devchallenges Board" backgroundImage={sample1} />
-            <BoardsGridItem boardName="Test Board" backgroundImage={sample2} />
+            {boards.map((board) => {
+                return <BoardsGridItem key={uuid()} boardName={board.boardName} backgroundImage={board.backgroundImage} />
+            })}
 
         </div>
     )

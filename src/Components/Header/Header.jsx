@@ -24,6 +24,7 @@ export const Header = () => {
                         <p className="all-boards">All Boards</p>
 
                     </div>
+
                 </div>
 
                 {/* Searchbar */}

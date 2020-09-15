@@ -31,7 +31,7 @@ export const SignupContextProvider = ({children}) => {
         },
         {
             name:'confirm_password',
-            placeholder:'Confirm Password',
+            placeholder:'ConOfirm Password',
             type:'password',
             value:fieldsData.confirmPassword,
         },
