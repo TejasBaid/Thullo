@@ -1,10 +1,10 @@
 import React, {useContext} from 'react'
 import './BoardsPageHeader.scss'
 import {addBoard} from "../../../Helpers/BoardsPageHelper";
-import {BoardContext} from "../../../Context/BoardContext";
+import {AllBoardsContext} from "../../../Context/AllBoardsContext";
 
 export const BoardsPageHeader = () => {
-    const {setBoards} = useContext(BoardContext)
+    const {setBoards} = useContext(AllBoardsContext)
     return(
         <div className="boards-page-header-container">
             <div className="boards-page-header-top">

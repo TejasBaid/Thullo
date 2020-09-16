@@ -1,11 +1,11 @@
 import React, {useContext} from 'react'
 import './AllBoardsPageGrid.scss'
 import {AllBoardsGridItem} from "../AllBoardsGridItem/AllBoardsGridItem";
-import {BoardContext} from "../../../Context/BoardContext";
+import {AllBoardsContext} from "../../../Context/AllBoardsContext";
 import uuid from 'react-uuid';
 
 export const AllBoardsPageGrid = () => {
-    const {boards} = useContext(BoardContext)
+    const {boards} = useContext(AllBoardsContext)
     return(
         <div className="boards-page-grid">
             {boards.map((board) => {

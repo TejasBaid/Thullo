@@ -1,15 +1,18 @@
 import React from 'react'
 import {SignupContextProvider} from "./Context/SignupContext";
 import {LoginContextProvider} from "./Context/LoginContext";
-import {BoardContextProvder} from "./Context/BoardContext";
+import {AllBoardContextProvider} from "./Context/AllBoardsContext";
+import {BoardContextProvider} from "./Context/BoardContext";
 
 export const Contexts = ({children}) => {
     return(
         <SignupContextProvider>
             <LoginContextProvider>
-                <BoardContextProvder>
-                    {children}
-                </BoardContextProvder>
+                <AllBoardContextProvider>
+                    <BoardContextProvider>
+                        {children}
+                    </BoardContextProvider>
+                </AllBoardContextProvider>
             </LoginContextProvider>
         </SignupContextProvider>
     )
