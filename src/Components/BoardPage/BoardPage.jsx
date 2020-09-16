@@ -4,6 +4,7 @@ import {Header} from "../Header/Header";
 import {BoardHeader} from "./BoardHeader/BoardHeader";
 import {BoardColumn} from "./BoardColumn/BoardColumn";
 import {BoardContext} from "../../Context/BoardContext";
+import {AddCardButton} from "./AddCardButton/AddCardButton";
 
 
 
@@ -20,6 +21,7 @@ export const BoardPage = () => {
                             <BoardColumn name={data.name} items={data.items} />
                         ))
                     }
+                    <AddCardButton type="column" />
                 </div>
             </div>
         </div>
