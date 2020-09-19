@@ -1,4 +1,6 @@
 .board-column{
   width: 14vw;
+  display: grid;
+  grid-template-columns: 1fr;
   margin-right: 3vw;
 }
