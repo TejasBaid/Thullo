@@ -34,7 +34,7 @@ export const BoardColumn = ({name,items,id}) => {
                 ))
             }
 
-            <AddCardButton type="card" />
+            {/*<AddCardButton type="card" />*/}
         </div>
     )
 }
