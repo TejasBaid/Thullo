@@ -1,12 +1,14 @@
-import React, {useContext} from 'react'
+import React, {useContext,useEffect} from 'react'
 import {Header} from "../components/Header/Header";
 import {BoardHeader} from "../components/BoardPage/BoardHeader/BoardHeader";
 import {BoardColumn} from "../components/BoardPage/BoardColumn/BoardColumn";
 import {BoardContext} from "../Context/BoardContext";
 import {AddCardButton} from "../components/BoardPage/AddCardButton/AddCardButton";
-import {DragDropContext, Droppable} from "react-beautiful-dnd";
+import {DragDropContext, Droppable, resetServerContext } from "react-beautiful-dnd-next";
 import {onDragEnd} from "../Helpers/KanbanHelper";
 import uuid from 'react-uuid'
+
+
 
 const BoardPage = () => {
     const {board,setBoard} = useContext(BoardContext)
@@ -19,7 +21,8 @@ const BoardPage = () => {
                 <div className="board">
                         {
                             Object.entries(board).map(([columnId, column], index) => (
-                                <Droppable droppableId={columnId}  >
+                                <Droppable droppableId={columnId} key={column.id}  >
+
                                     {(provided,snapshot) => {
                                         return (
                                             <div key={columnId} {...provided.draggableProps} ref={provided.innerRef}>

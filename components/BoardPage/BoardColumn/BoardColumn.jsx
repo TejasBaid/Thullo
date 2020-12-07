@@ -3,7 +3,7 @@ import {BoardColumnHeader} from "../BoardColumnHeader/BoardColumnHeader";
 import {BoardItem} from "../BoardItem/BoardItem";
 import {AddCardButton} from "../AddCardButton/AddCardButton";
 import uuid from 'react-uuid'
-import {Droppable,Draggable} from "react-beautiful-dnd";
+import {Droppable,Draggable} from "react-beautiful-dnd-next";
 
 export const BoardColumn = ({name,items,id}) => {
     return(
