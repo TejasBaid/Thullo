@@ -19,7 +19,7 @@ const BoardPage = () => {
                 <div className="board">
                         {
                             Object.entries(board).map(([columnId, column], index) => (
-                                <Droppable key={uuid()} droppableId={columnId}  >
+                                <Droppable droppableId={columnId}  >
                                     {(provided,snapshot) => {
                                         return (
                                             <div key={columnId} {...provided.draggableProps} ref={provided.innerRef}>
